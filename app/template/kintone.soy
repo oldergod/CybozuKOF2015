@@ -1,0 +1,51 @@
+{namespace kintone.template.soy}
+
+/**
+ * 悟空ボウズマンを呼び出すボタン
+ */
+{template .buttonDiv}
+  <div class="content-wrapper">
+    <a href="#" class="button">ボウズマンを助ける</a>
+  </div>
+{/template}
+
+/**
+ * 悟空ボウズマン画像
+ */
+{template .goku}
+  <div class="goku">
+  	<img src="../img/goku_bozuman.png" title="悟空ボウズマン" alt="悟空ボウズマン" />
+  </div>
+{/template}
+
+/**
+ * 悟空ボウズマンキャプション
+ */
+{template .gokuCaption}
+  {call .onlyTextDiv}
+    {param divClass: 'goku-caption' /}
+    {param text: '悟空ボウズマン' /}
+  {/call}
+{/template}
+
+
+/**
+ * 悟空ボウズマンメッセージ
+ */
+{template .gokuMessage}
+  {call .onlyTextDiv}
+    {param divClass: 'goku-message' /}
+    {param text: 'ありがとう！' /}
+  {/call}
+{/template}
+
+/**
+ * テキストのみのdivテンプレート
+ * @param divClass
+ * @param text
+ */
+{template .onlyTextDiv}
+  <div class="{$divClass}">
+    {$text}
+  </div>
+{/template}

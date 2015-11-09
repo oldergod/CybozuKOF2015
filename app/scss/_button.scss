@@ -1,0 +1,56 @@
+$_background-color-stop-1: #65a9d7;
+$_background-color-stop-2: #3e779d;
+
+@mixin background($color-stop-1, $color-stop-2) {
+  background: $color-stop-2;
+  background: linear-gradient(to bottom, $color-stop-1, $color-stop-2);
+}
+
+%_border {
+  border: 1px solid #0a3c59;
+}
+
+%_text-shadow {
+  text-shadow: #1e4158 0 1px 0;
+  color: #fff;
+}
+
+$_box-shadow-color: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
+
+%_box-shadow {
+  box-shadow: $_box-shadow-color;
+  text-shadow: #7ea4bd 0 1px 0;
+}
+
+$_radius: 6px;
+
+%_border-radius {
+  border-radius: $_radius;
+}
+
+.button {
+  @include background($_background-color-stop-1, $_background-color-stop-2);
+  @extend %_border;
+  @extend %_box-shadow;
+  @extend %_border-radius;
+  padding: 10.5px 21px;
+  color: #06426c;
+  text-decoration: none;
+  vertical-align: middle;
+  position: relative;
+  top: 45%;
+  left: 50%;
+  margin-left: -354px;
+
+  &:hover {
+    @include background($_background-color-stop-1, $_background-color-stop-2);
+    @extend %_border;
+    @extend %_text-shadow;
+  }
+
+  &:active {
+    @include background($_background-color-stop-2, $_background-color-stop-1);
+    @extend %_border;
+    @extend %_text-shadow;
+  }
+}

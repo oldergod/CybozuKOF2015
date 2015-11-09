@@ -1,0 +1,9 @@
+$_color-stop-1: #9AC7E6;
+$_color-stop-2: #48A8E8;
+
+body {
+  background: $_color-stop-1;
+  background: radial-gradient(circle, $_color-stop-1, $_color-stop-2);
+  color: #00385D;
+  font-family: 'Helvetica Neue', Helvetica, Arial, 'Hiragino Kaku Gothic Pro', Meiryo, 'MS PGothic', sans-serif;
+}

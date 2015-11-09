@@ -1,0 +1,22 @@
+{
+  "name": "cybozu-KOF2015",
+  "version": "0.1.0",
+  "description": "app that will be used at the KOF2015 as demo",
+  "scripts": {
+    "clean-js": "rm -rf app/javascript/*.soy.js && rm -f app/javascript/bundle.min.js",
+    "clean-css": "rm -f app/css/*",
+    "clean": "npm run clean-js && npm run clean-css",
+    "compile": "./bin/compile.sh 2>&1",
+    "js": "npm run clean-js && npm run compile",
+    "css": "npm run clean-css && node-sass --include-path app/scss -o app/css app/scss/kintone.scss && postcss --use autoprefixer -d app/css/ app/css/kintone.css",
+    "all": "npm run clean && npm run compile && npm run css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "google-closure-compiler": "^20150920.0.0",
+    "google-closure-library": "^20150920.0.0",
+    "google-closure-templates": "^20150410.0.0",
+    "node-sass": "^3.4.0",
+    "postcss-cli": "^2.3.2"
+  }
+}
