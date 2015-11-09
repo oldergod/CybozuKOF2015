@@ -109,7 +109,7 @@ kintone.component.GokuCaption.prototype.enterDocument = function() {
  */
 kintone.component.GokuCaption.prototype.showGokuMessage = function() {
 	var gokuMessage = new kintone.component.GokuMessage();
-	gokuMessage.render(this.getContentElement(true));
+	gokuMessage.render(this.getContentElement());
 };
 
 
@@ -130,7 +130,7 @@ goog.inherits(kintone.component.GokuMessage, goog.ui.Component);
  */
 kintone.component.GokuMessage.prototype.createDom = function() {
   // テンプレートからDOMを生成
-  var el = goog.soy.renderAsElement(kintone.template.soy.gokuMessage, null, null, this.getDomHelper();
+  var el = goog.soy.renderAsElement(kintone.template.soy.gokuMessage, null, null, this.getDomHelper());
   this.setElementInternal(el);
 };
 

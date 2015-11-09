@@ -42,7 +42,7 @@ kintone.component.Button.prototype.enterDocument = function() {
   kintone.component.Button.base(this, 'enterDocument');
   var callButton = goog.dom.getFirstElementChild(this.getContentElement());
   // クリックされた時に callBozuman を呼び出す
-  this.getHandler().listen(callButton, goog.events.EventType.CLICK, this.callBozman);
+  this.getHandler().listen(callButton, goog.events.EventType.CLICK, this.callBozuman);
 };
 
 /**

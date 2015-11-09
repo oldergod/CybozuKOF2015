@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', kintone.setup.init);
 /**
  * 意味のないBooleanを返す
  *
- * @return {string}
+ * @return {boolean}
  */
 kintone.setup.anyBoolean = function() {
 	return true;
