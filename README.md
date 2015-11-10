@@ -1,5 +1,6 @@
 # KOF2015 デモアプリ
 KOF2015 に利用するアプリ。
+悟空ボウズマンを助けながら、Closure Compiler の体験がきるアプリ。
 
 ## 事前に
 ### nodebrewとNode.jsのインストール
