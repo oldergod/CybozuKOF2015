@@ -21,8 +21,10 @@ npm install
 ```
 
 ## 使い方
-* npm run js # SoyのJavaScriptかつ全体のJavaScriptをコンパイルする
-* npm run css # scss を css に変換する
-* npm run all # 上記のコマンド、両方実行する
+```shell
+npm run js   # SoyのJavaScriptかつ全体のJavaScriptをコンパイルする
+npm run css  # scss を css に変換する
+npm run all  # 上記のコマンド、両方実行する
+```
 
 app/html/kintone.html を開く。
