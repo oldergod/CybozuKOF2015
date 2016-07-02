@@ -13,8 +13,8 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.0.3",
-    "google-closure-compiler": "^20150920.0.0",
-    "google-closure-library": "^20150920.0.0",
+    "google-closure-compiler": "^20160619.0.0",
+    "google-closure-library": "^20160619.0.0",
     "google-closure-templates": "^20150410.0.0",
     "node-sass": "^3.4.0",
     "postcss-cli": "^2.3.2"
