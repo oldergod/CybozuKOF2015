@@ -12,7 +12,7 @@
     "all": "npm run clean && npm run compile && npm run css"
   },
   "devDependencies": {
-    "autoprefixer": "^6.3.7",
+    "autoprefixer": "^6.4.0",
     "google-closure-compiler": "^20160713.0.0",
     "google-closure-library": "^20160713.0.0",
     "google-closure-templates": "^20150410.0.0",
